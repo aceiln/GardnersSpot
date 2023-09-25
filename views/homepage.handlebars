@@ -1,16 +1,18 @@
-  <main class="container container-fluid mt-5">
-    <!-- Add your image here -->
-    <img src="/path/to/your/image.jpg" alt="Plant Image" />
+<main class="container container-fluid mt-5">
+  <!-- Display the iframe widget on the homepage -->
+  <iframe src="https://www.plantmaps.com/hardiness-zone-zipcode.php" name="Find the USDA Hardiness Zone for your Zipocde and Map it" width="210" scrolling="No" frameborder="0" marginheight="0" marginwidth="0">[Your browser doesn't support IFrames. <a href="//www.plantmaps.com/hardiness-zone-zipcode.php" target="_blank">Click here</a> to find the USDA hardiness zone for your zipcode.]</iframe>
 
-    <!-- Create a dropdown input for selecting a plant hardiness zone -->
-    <div class="form-group">
-      <label for="zone-select">Select Plant Hardiness Zone:</label>
-      <select class="form-select" id="zone-select">
-        {{#each zones}}
-          <option value="{{this.id}}">{{this.name}}</option>
-        {{/each}}
-      </select>
-    </div>
+  <!-- Create a dropdown input for selecting a plant hardiness zone -->
+  <div class="form-group">
+    <label for="zone-select">Select Plant Hardiness Zone:</label>
+    <select class="form-select" id="zone-select">
+      {{#each plantHardinessMap.zones}}
+        <option value="{{this.id}}">{{this.name}}</option>
+      {{/each}}
+    </select>
+  </div>
+</main>
+
 
 
 
