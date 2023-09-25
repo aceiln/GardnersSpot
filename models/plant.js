@@ -1,6 +1,6 @@
 
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../config/connect');
 
 class Plant extends Model {}
 
@@ -24,5 +24,8 @@ Plant.init(
     modelName: 'plant',
   }
 );
+
+// Set up the many-to-many association with Zone
+Plant.belongsToMany(Zone, { through: 'PlantZone' });
 
 module.exports = Plant;
