@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS user_plants;
-CREATE DATABASE user_plants;
+DROP DATABASE IF EXISTS companion_plants;
+CREATE DATABASE companion_plants;
