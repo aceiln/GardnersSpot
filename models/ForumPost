@@ -1,0 +1,43 @@
+// Import Sequelize and define the model
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connect'); 
+
+// Define the ForumPost model
+class ForumPost extends Model {}
+
+// Initialize the ForumPost model with the columns
+ForumPost.init(
+  {
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    content: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    author: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    // Add more columns as needed
+  },
+  {
+    sequelize, // Pass the sequelize instance
+    modelName: 'ForumPost', // Specify the model name
+  }
+);
+
+// Create the ForumPost table in the database if it doesn't exist
+ForumPost.sync({ force: true }).then(() => {
+  console.log('ForumPost table created.');
+});
+
+module.exports = ForumPost;
+
+
+
+
+
+
+
