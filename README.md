@@ -77,7 +77,7 @@ TODO: add screenshot preview
 TODO: add video link demo here
 
 ## Resources:
-TODO: 
+[Widget code that enables user to enter their zipcode and find their hardiness zone came from here.](https://www.plantmaps.com/hardiness-zone-zipcode-search-widget.php)
 
 ## License:
 ![License](https://img.shields.io/badge/License-MIT%20License-brightgreen)  
