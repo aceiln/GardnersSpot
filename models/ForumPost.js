@@ -1,6 +1,7 @@
 // Import Sequelize and define the model
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connect'); 
+const Zone = require('./Zone'); 
 
 // Define the ForumPost model
 class ForumPost extends Model {}
@@ -28,10 +29,6 @@ ForumPost.init(
   }
 );
 
-// Create the ForumPost table in the database if it doesn't exist
-ForumPost.sync({ force: true }).then(() => {
-  console.log('ForumPost table created.');
-});
 
 module.exports = ForumPost;
 
