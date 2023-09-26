@@ -4,17 +4,23 @@ const { Post } = require('../models');
 
 // Create a new post
 router.post('/create', async (req, res) => {
-  try {
-    const { title, content, author, zoneId } = req.body;
-
-    const post = await Post.create({ title, content, author, zoneId });
-
-    res.status(201).json(post);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal Server Error' });
-  }
-});
+    try {
+      const { title, content, author, zoneId } = req.body;
+  
+      // Check if zoneId is provided
+      if (!zoneId) {
+        return res.status(400).json({ message: 'Zone ID is required for creating a post.' });
+      }
+  
+      // Implementation for creating a new post
+      const post = await Post.create({ title, content, author, zoneId });
+  
+      res.status(201).json(post);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  });
 
 // Update a post by ID
 router.put('/:id', async (req, res) => {

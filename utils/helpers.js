@@ -7,4 +7,12 @@ module.exports = {
       new Date(date).getFullYear() + 5
     }`;
   },
+  // Other helpers...
+  json: function (context) {
+    return JSON.stringify(context);
+  },
 };
+
+
+
+
