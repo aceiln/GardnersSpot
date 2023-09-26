@@ -13,6 +13,10 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    author: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     zoneId: {
       type: DataTypes.INTEGER,
       allowNull: false,

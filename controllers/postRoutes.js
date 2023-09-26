@@ -1,32 +1,51 @@
-// const express = require("express");
-// const router = express.Router();
-// const { Zone, Forum } = require("../models");
+const express = require('express');
+const router = express.Router();
+const { Post } = require('../models');
 
-// // Get the forum and its associated zone
-// router.get('/:zoneId/forums/:forumId', async (req, res) => {
-//     try {
-//         const zoneId = req.params.zoneId;
-//         const forumId = req.params.forumId;
-//         console.log('Zone ID:', zoneId);
-//         console.log('Forum ID:', forumId);
+// Create a new post
+router.post('/create', async (req, res) => {
+  try {
+    const { title, content, author, zoneId } = req.body;
 
-//         // Fetch the forum by forumId and include its associated zone
-//         const forum = await Forum.findByPk(forumId, {
-//             include: Zone,
-//         });
+    const post = await Post.create({ title, content, author, zoneId });
 
-//         if (!forum) {
-//             console.log('Forum not found');
-//             return res.status(404).json({ message: "Forum not found" });
-//         }
+    res.status(201).json(post);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
 
-//         console.log('Forum Data:', forum);
+// Update a post by ID
+router.put('/:id', async (req, res) => {
+  try {
+    const { title, content } = req.body;
+    const postId = req.params.id;
 
-//         res.json({ forum, zone: forum.Zone });
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).json({ message: "Internal Server Error" });
-//     }
-// });
+    const updatedPost = await Post.update(
+      { title, content },
+      { where: { id: postId } }
+    );
 
-// module.exports = router;
+    res.status(200).json(updatedPost);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+// Delete a post by ID
+router.delete('/:id', async (req, res) => {
+  try {
+    const postId = req.params.id;
+
+    await Post.destroy({ where: { id: postId } });
+
+    res.status(204).end();
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+module.exports = router;
