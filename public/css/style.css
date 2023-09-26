@@ -162,3 +162,67 @@
     align-content: flex-start;
     align-items: center;
   }
+
+  .zone-button {
+    display: inline-block;
+    width: 50px; /* Adjust the width and height to control the size of the square */
+    height: 50px; /* Adjust the width and height as needed */
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .zone-button.zone-1 {
+    background-color: #B695C0;
+}
+
+.zone-button.zone-2 {
+    background-color: #E090DF;
+}
+
+.zone-button.zone-3 {
+    background-color: #A44CD3;
+}
+
+.zone-button.zone-4 {
+    background-color: #8800C7;
+}
+
+.zone-button.zone-5 {
+    background-color: #6495ed;
+}
+
+.zone-button.zone-6 {
+    background-color: #028a0F;
+}
+
+.zone-button.zone-7 {
+    background-color: #d1e231;
+}
+
+.zone-button.zone-8 {
+    background-color: #fde5b4;
+}
+
+.zone-button.zone-9 {
+    background-color: #ffcbc4;
+}
+
+.zone-button.zone-10 {
+    background-color: #f09030;
+}
+
+.zone-button.zone-11 {
+    background-color: #ff4500;
+}
+
+.zone-button.zone-12 {
+    background-color: #960019;
+}
+
+.zone-button.zone-13 {
+    background-color: #420D09;
+}
