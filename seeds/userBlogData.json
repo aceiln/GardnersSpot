@@ -60,5 +60,104 @@
     "content": "Lorem ipsum dolor sit amet...",
     "author": "Jane Smith",
     "zoneId": 5
+  },
+  {
+    "title": "Introduction to Gardening in Zone 6",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 6
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 6",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 6
+  },
+
+  {
+    "title": "Introduction to Gardening in Zone 7",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 7
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 7",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 7
+  },
+  {
+    "title": "Introduction to Gardening in Zone 8",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 8
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 8",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 8
+  },
+  {
+    "title": "Introduction to Gardening in Zone 9",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 9
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 9",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 9
+  },
+
+  {
+    "title": "Introduction to Gardening in Zone 10",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 10
+  },
+  {
+    "title": "Choosing the Right Plants in Zone 10",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 10
+  },
+  {
+    "title": "Introduction to Gardening in Zone 11",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 11
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 11",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 11
+  },
+
+  {
+    "title": "Introduction to Gardening in Zone 12",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 12
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 12",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 12
+  },
+  {
+    "title": "Introduction to Gardening in Zone 13",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "John Doe",
+    "zoneId": 13
+  },
+  {
+    "title": "Choosing the Right Plants for Zone 13",
+    "content": "Lorem ipsum dolor sit amet...",
+    "author": "Jane Smith",
+    "zoneId": 13
   }
 ]
