@@ -1,5 +1,13 @@
 const User = require ('./User');
-// const ForumPost = require ('./ForumPost');
+const Post = require ('./Post');
 const Zone = require ('./Zone');
-// ForumPost.
-module.exports = { User , Zone};
+
+Post.belongsTo(User, {
+    foreignKey:'userId'
+})
+Post.belongsTo(Zone, {
+    foreignKey:'zoneId'
+})
+
+
+module.exports = { User , Zone , Post};
