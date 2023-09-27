@@ -1,0 +1,16 @@
+<h1 class="zone-text">Zone 4</h1>
+<p class="zone-text"> Planting Zone 4 covers the southern coastal areas of Alaska, northern areas of the United States and high elevations found in the western mountains. These unique climates share minimum average temperatures of between -30 to -20 degrees F. Planting in this zone is less challenging than in colder zones, but the short growing season impacts both vegetables and flower bloom times.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
+{{#each posts}} 
+<h2 class="zone-text">{{title}}</h2>
+<p class="zone-text">{{content}}</p>
+<p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
+{{/each}}

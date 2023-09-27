@@ -1,0 +1,16 @@
+<h1 class="zone-text">Zone 7</h1>
+<p class="zone-text"> Planting Zone 7 reaches across approximately 15 U.S. states. This zone features cool winters with average minimum temperatures falling between 0 to 10 degrees F. Gardens in this zone have multiple plant options from seed catalogues, local home stores, nurseries and greenhouses.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
+{{#each posts}} 
+<h2 class="zone-text">{{title}}</h2>
+<p class="zone-text">{{content}}</p>
+<p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
+{{/each}}

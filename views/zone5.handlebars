@@ -1,0 +1,17 @@
+<h1 class="zone-text">Zone 5</h1>
+<p class="zone-text"> Plant hardiness Zone 5 includes the southern coastal region of Alaska, the North Central United States and portions of New England. With minimum average temperatures between -20 and -10 degrees F, this zone experiences a moderately cold winter. While the growing season is short, you can extend it by using cold frames or using started plants in your annual garden.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
+{{#each posts}} 
+<h2 class="zone-text">{{title}}</h2>
+<p class="zone-text">{{content}}</p>
+<p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
+{{/each}}
+

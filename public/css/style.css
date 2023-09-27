@@ -16,7 +16,7 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: var(--quatrinary);
+    background-color: #104229; 
   }
   
   a {
@@ -24,9 +24,9 @@
     text-decoration: none;
   }
   
-  a:visited {
+  /* a:visited {
     color: inherit;
-  }
+  } */
   
   header {
     padding: 40px;
@@ -61,49 +61,16 @@
     text-align: center;
   }
   
-  nav a:hover {
-    color: var(--secondary);
-    background-color: var(--dark);
-  }
+  .login-text {
+    color: #FFffff; 
+}
+.homepage-text {
+  color: #a6ef6e; 
+}
+.zone-text {
+  color: #a6ef6e;
+}
   
-  .gallery {
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 100%;
-    transition: color 0.1s;
-    margin-left: 16px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .painting {
-    width: 50%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
-  
-  .painting-details {
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
   
   /* CARDS */
   .card {
@@ -144,16 +111,6 @@
     font-weight: bold;
   }
   
-  .gallery-name {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 5px var(--secondary);
-    border: 10px groove var(--light);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 100px;
-    padding-left: 100px;
-  }
   
   /* LAYOUT */
   .container {
@@ -162,3 +119,67 @@
     align-content: flex-start;
     align-items: center;
   }
+
+  .zone-button {
+    display: inline-block;
+    width: 50px; /* Adjust the width and height to control the size of the square */
+    height: 50px; /* Adjust the width and height as needed */
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .zone-button.zone-1 {
+    background-color: #B695C0;
+}
+
+.zone-button.zone-2 {
+    background-color: #E090DF;
+}
+
+.zone-button.zone-3 {
+    background-color: #A44CD3;
+}
+
+.zone-button.zone-4 {
+    background-color: #8800C7;
+}
+
+.zone-button.zone-5 {
+    background-color: #6495ed;
+}
+
+.zone-button.zone-6 {
+    background-color: #028a0F;
+}
+
+.zone-button.zone-7 {
+    background-color: #d1e231;
+}
+
+.zone-button.zone-8 {
+    background-color: #fde5b4;
+}
+
+.zone-button.zone-9 {
+    background-color: #ffcbc4;
+}
+
+.zone-button.zone-10 {
+    background-color: #f09030;
+}
+
+.zone-button.zone-11 {
+    background-color: #ff4500;
+}
+
+.zone-button.zone-12 {
+    background-color: #960019;
+}
+
+.zone-button.zone-13 {
+    background-color: #420D09;
+}

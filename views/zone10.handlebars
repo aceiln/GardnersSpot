@@ -1,0 +1,17 @@
+<h1 class="zone-text">Zone 10</h1>
+<p class="zone-text"> Southern inland California, southern Florida and Hawaii are the three small areas where the average minimum winter temperature only falls between 30 to 40 degrees F. The ability of Zone 10 gardeners to avoid freezing temperatures is a huge bonus for winter gardening, but the extreme heat of the summer months limits planting possibilities.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
+{{#each posts}} 
+<h2 class="zone-text">{{title}}</h2>
+<p class="zone-text">{{content}}</p>
+<p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
+{{/each}}
+

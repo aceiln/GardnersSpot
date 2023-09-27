@@ -1,0 +1,16 @@
+<h1 class="zone-text">Zone 9</h1>
+<p class="zone-text"> Planting Zone 9 is considered a year-round planting zone. Located in California, Arizona, Texas, Florida and along the Gulf of Mexico coast, this zone features warm winters and hot summers. With an average minimum winter temperature of 20 to 30 degrees F, Zone 9 features active gardens throughout the entire year.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
+{{#each posts}} 
+<h2 class="zone-text">{{title}}</h2>
+<p class="zone-text">{{content}}</p>
+<p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
+{{/each}}

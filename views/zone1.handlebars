@@ -1,0 +1,21 @@
+<h1 class="zone-text">Zone 1</h1>
+<p class="zone-text"> USDA Plant Hardiness Zone 1 is the coldest zone designation for the United States. With minimum average temperatures between -60 to -50 degrees F, it can be a difficult zone for gardening. The majority of Zone 1 is located in Alaska. This tundra environment is extremely harsh and plants must have extreme cold hardiness and drought tolerance.</p>
+
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
+{{#each posts}} 
+<h2 class="zone-text">{{title}}</h2>
+<p class="zone-text">{{content}}</p>
+<p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
+{{/each}}
+
+
+
+
