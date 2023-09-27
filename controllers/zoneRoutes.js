@@ -12,14 +12,14 @@ router.get('/:zoneId', async (req, res) => {
     });
     console.log(posts);
        // Convert Sequelize model instances to plain JavaScript objects
-       const plainPosts = posts.map(post => post.toJSON());
+    const plainPosts = posts.map(post => post.toJSON());
     
-       // three pieces that go into our render: zone partial, layout, and data object
-       res.render(`zone${req.params.zoneId}`, { 
-         layout: 'main',
-         posts: plainPosts // Pass the plain JavaScript objects to the template
-       });
-   
+    // three pieces that go into our render: zone partial, layout, and data object
+    res.render(`zone${req.params.zoneId}`, { 
+      layout: 'main',
+      posts: plainPosts // Pass the plain JavaScript objects to the template
+    });
+
 
   } catch (error) {
     console.error(error);

@@ -1,8 +1,17 @@
 <h1 class="zone-text">Zone 3</h1>
 <p class="zone-text"> Plant hardiness Zone 3 is found throughout Alaska, the northern portions of the United States and in high altitude areas. This zone features minimum average temperatures of -40 to -30 degrees F. Depending on the geographical location of your growing space, high winds, extreme cold and low moisture may affect growing conditions.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
 {{#each posts}} 
 <h2 class="zone-text">{{title}}</h2>
 <p class="zone-text">{{content}}</p>
 <p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
 {{/each}}
 

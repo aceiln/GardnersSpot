@@ -1,7 +1,16 @@
 <h1 class="zone-text">Zone 13</h1>
 <p class="zone-text"> Planting Zones 12 and 13 are not found in the continental United States, but are located in both Hawaii and Puerto Rico. These two plant hardiness zones are extremely warm, tropical environments that are best suited for plants tolerant of intense heat. With the average minimum winter temperature between 50 and 70 degrees F, Zones 12 and 13, the warmest of all the USDA hardiness zones, feature tropical plants and exotic fruits.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
 {{#each posts}} 
 <h2 class="zone-text">{{title}}</h2>
 <p class="zone-text">{{content}}</p>
 <p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
 {{/each}}

@@ -1,8 +1,16 @@
 <h1 class="zone-text">Zone 6</h1>
 <p class="zone-text"> USDA Hardiness Zone 6 covers a large portion of the United States. Known as a generally mild climate, the average minimum winter temperature is between -10 to 0 degrees F. With cold winter and mild-to-hot summers, you have many growing options in Zone 6.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
 {{#each posts}} 
 <h2 class="zone-text">{{title}}</h2>
 <p class="zone-text">{{content}}</p>
 <p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
 {{/each}}
-

@@ -1,8 +1,16 @@
 <h1 class="zone-text">Zone 8</h1>
 <p class="zone-text"> Zone 8 is considered one of the warmest plant hardiness zones for a large portion of the southern United States. Extending up the western coast, Zone 8 features average minimum winter temperatures of 10 to 20 degrees F. With hot summers and mild winters, growers typically enjoy a long planting season.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
 {{#each posts}} 
 <h2 class="zone-text">{{title}}</h2>
 <p class="zone-text">{{content}}</p>
 <p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
 {{/each}}
-

@@ -81,6 +81,8 @@ TODO: add video link demo here
 
 [Text about each zone comes from this site.](https://gilmour.com/planting-zones-hardiness-map)
 
+[Link to GitHub repo for normalize.css](https://github.com/necolas/normalize.css/blob/master/normalize.css)
+
 ## License:
 ![License](https://img.shields.io/badge/License-MIT%20License-brightgreen)  
 [License](./LICENSE)

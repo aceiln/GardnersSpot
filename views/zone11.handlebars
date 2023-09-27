@@ -1,8 +1,17 @@
 <h1 class="zone-text">Zone 11</h1>
 <p class="zone-text"> Planting Zone 11 is found in Hawaii, the Florida Keys, Puerto Rico and a few small areas of the Continental United States. This extremely warm zone features mellow winters with an average minimum winter temperature of between 40 to 50 degrees F. Cold hardiness is not a factor in this zone, since it has zero frost days. Instead, growers here must consider the impact heat has on their planting choices.</p>
+<!-- Create a form for posting -->
+<form action="/post/create" method="POST">
+  <input type="text" name="title" placeholder="Title">
+  <input type="text" name="content" placeholder="Content">
+  <input type="text" name="author" placeholder="Author">
+  <input type="number" name="zoneId" placeholder="Zone ID">
+  <button type="submit">Submit</button>
+</form>
 {{#each posts}} 
 <h2 class="zone-text">{{title}}</h2>
 <p class="zone-text">{{content}}</p>
 <p class="zone-text">{{author}}</p>
+ <button type="submit">Delete</button>
 {{/each}}
 
