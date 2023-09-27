@@ -16,7 +16,7 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: var(--quatrinary);
+    background-color: #104229; 
   }
   
   a {
@@ -61,49 +61,16 @@
     text-align: center;
   }
   
-  nav a:hover {
-    color: var(--secondary);
-    background-color: var(--dark);
-  }
+  .login-text {
+    color: #FFffff; 
+}
+.homepage-text {
+  color: #a6ef6e; 
+}
+.zone-text {
+  color: #a6ef6e;
+}
   
-  .gallery {
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 100%;
-    transition: color 0.1s;
-    margin-left: 16px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .painting {
-    width: 50%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
-  
-  .painting-details {
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
   
   /* CARDS */
   .card {
