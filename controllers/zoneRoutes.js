@@ -10,11 +10,16 @@ router.get('/:zoneId', async (req, res) => {
         zoneId: req.params.zoneId // only want it to return posts where zoneid matches zoneid passed in
       }
     });
-// three pieces that go into our render: zone partial, layout, and data object
-    res.render(`zone${req.params.zoneId}`, { 
-      layout: 'main',
-      posts
-    });
+    console.log(posts);
+       // Convert Sequelize model instances to plain JavaScript objects
+       const plainPosts = posts.map(post => post.toJSON());
+    
+       // three pieces that go into our render: zone partial, layout, and data object
+       res.render(`zone${req.params.zoneId}`, { 
+         layout: 'main',
+         posts: plainPosts // Pass the plain JavaScript objects to the template
+       });
+   
 
   } catch (error) {
     console.error(error);
