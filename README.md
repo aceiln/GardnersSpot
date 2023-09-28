@@ -21,7 +21,7 @@ To use this command-line application, follow these steps:
 2. Clone the repository or download the source code.
 3. Navigate to the project directory in your terminal.
 4. After installing the dependencies and creating a .env on your local machine, you can invoke the application using `node index.js` or `npm start`
-5. Check out our application in your browser using your local host.
+5. Check out our application in your browser using your local host..
 ​
 ## Tech Used
 Node.js for the runtime environment. 
