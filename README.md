@@ -1,13 +1,13 @@
 # Companion Planting
 
 ## Description
-A command-line application that quickly and easily generates a README file from a user's input.
+Companion Planting is a full-stack application that uses Express.js in a Node.js environment. A site for gardeners to connect with other gardeners who are growing in similar plant hardiness zones. 
 
 [Click Here](insert link to github) to visit our GitHub repository.
 
 ## Table of Contents
 - [Installation](#installation)
-- [MVP](#mvp)
+- [Tech Used](#tech-used)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Preview](#preview)
@@ -17,41 +17,18 @@ A command-line application that quickly and easily generates a README file from 
 
 ## Installation
 To use this command-line application, follow these steps:
-1. Make sure you have Node.js installed on your system.
+1. Make sure you have Node.js and mySQL installed on your system.
 2. Clone the repository or download the source code.
 3. Navigate to the project directory in your terminal.
-4. After installing the dependencies, you can invoke the application using `node index.js` or `npm start`
-5. Check out our application in your browser using your local host... 
-6. ????????? maybe add something about HEROKU ??????
-
-## MVP
-* Use Node.js and Express.js to create a RESTful API.
+4. After installing the dependencies and creating a .env on your local machine, you can invoke the application using `node index.js` or `npm start`
+5. Check out our application in your browser using your local host.
 ​
-* Use Handlebars.js as the template engine.
-​
-* Use MySQL and the Sequelize ORM for the database.
-​
-* Have both GET and POST routes for retrieving and adding new data.
-​
-* Use at least one new library, package, or technology that we haven’t discussed.
-​
-* Have a folder structure that meets the MVC paradigm.
-​
-* Include authentication (express-session and cookies).
-​
-* Protect API keys and sensitive information with environment variables.
-​
-* Be deployed using Heroku (with data).
-​
-* Have a polished UI.
-​
-* Be responsive.
-​
-* Be interactive (i.e., accept and respond to user input).
-​
-* Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-​
-* Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
+## Tech Used
+Node.js for the runtime environment. 
+Express.js for the framework. 
+Handlebars.js as the template engine.
+MySQL and the sequelize ORM for the database.
+We have included normalize.css untouched and built upon it, overriding the defaults in our style.css
 
 ## User Story
 As a gardener, I want to connect with other gardners according to plant hardiness zones in order to create a place/forum to troubleshoot with others who share similar climate issues, so that we can grow and expand successful gardens.
@@ -66,15 +43,16 @@ WHEN I am logged in,
 
 THEN I am redirected to the homepage where I can see a plant hardiness map and identify which zone I am growing in. 
 
-WHEN I select my zone from a dropdown menu, 
+WHEN I select click the zone button I belong to,
 
-THEN I am directed to a page with information about plants for this zone and a blog-style forum where I can contribute to a thread conversation among other account holders. 
+THEN I am directed to a blog-style forum where I can join and contribute to conversations with people growing in my same plant hardiness zone.
 
 ## Preview
-TODO: add screenshot preview
+![alt text](/public/assets/login_preview.png)
 
-## Demo
-TODO: add video link demo here
+![alt text](/public/assets/preview_image.png)
+
+![alt text](/public/assets/blog_preview.jpg)
 
 ## Resources:
 [Widget code that enables user to enter their zipcode and find their hardiness zone came from here.](https://www.plantmaps.com/hardiness-zone-zipcode-search-widget.php)
