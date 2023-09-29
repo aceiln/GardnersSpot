@@ -3,7 +3,9 @@
 ## Description
 Companion Planting is a full-stack application that uses Express.js in a Node.js environment. A site for gardeners to connect with other gardeners who are growing in similar plant hardiness zones. 
 
-[Click Here](insert link to github) to visit our GitHub repository.
+[Click Here for app deployed through Heroku.](https://companion-planting-ecec108bfc1e.herokuapp.com/login)
+
+[Click Here for link to our GitHub repo.](https://github.com/aceiln/GardnersSpot)
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,7 +13,6 @@ Companion Planting is a full-stack application that uses Express.js in a Node.js
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Preview](#preview)
-- [Demo](#demo)
 - [Resources](#resources)
 - [License](#license)
 
